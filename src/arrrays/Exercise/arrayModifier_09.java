@@ -3,7 +3,7 @@ package arrrays.Exercise;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class arrayModifier_08 {
+public class arrayModifier_09 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] numberArr = Arrays.stream(scanner.nextLine().split(" "))
