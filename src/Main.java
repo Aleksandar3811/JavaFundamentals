@@ -4,19 +4,31 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
-        int n=Integer.parseInt(scanner.nextLine());
+        String first = scanner.nextLine();
+        String second = scanner.nextLine();
+        char firstChar = first.charAt(0);
+        char secondChar = second.charAt(0);
 
-//        int[] numberArr= Arrays.stream(number.split(" "))
-//                .mapToInt( Integer::parseInt)
-//                .toArray();
-//        for (int j : numberArr) {
-//            if (j % 2 == 0) {
-//                evenSum += j;
-//            }
-//            else {
-//                oddSum+=j;
-//            }
-//        }
+        charSequence(firstChar, secondChar);
+    }
+
+    public static void charSequence(char first, char second){
+
+        while (first != second){
+            if (second < first){
+                second++;
+                if (second == first){
+                    break;
+                }
+                System.out.print(second + " ");
+            } else {
+                first++;
+                if (first == second) {
+                    break;
+                }
+                System.out.print(first + " ");
+            }
+        }
     }
 
 }
